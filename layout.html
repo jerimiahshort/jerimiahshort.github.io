@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sector Layout</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div id="titleParent"><div id="mainTitle">
+                designs by Jerimiah
+        </div></div>
+        <div class="quad tl">
+            <div class="parent"><a href="javascript:;" id="tlOpen" class="expandLink">
+                <i class="ion-ios-person"></i><br>
+                About Me
+            </a></div>
+        </div>
+        <div class="quad tr">
+            <div class="parent"><a href="javascript:;" id="trOpen" class="expandLink">
+                <i class="ion-ios-paper"></i><br>
+                Resume
+            </a></div>
+        </div>
+        <div class="quad bl">
+            <div class="parent"><a href="javascript:;" id="blOpen" class="expandLink">
+                <i class="ion-ios-film"></i><br>
+                Portfolio
+            </a></div>
+        </div>
+        <div class="quad br">
+            <div class="parent"><a href="javascript:;" id="brOpen" class="expandLink">
+                <i class="ion-ios-email"></i><br>
+                Contact
+            </a></div>
+        </div>
+    </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script>
+    $(function() {
+        $('#tlOpen').click(function(e) {
+            $('.quad.tl').toggleClass('open');
+            $('#mainTitle').toggleClass('top');
+            e.preventDefault();
+        });
+        $('#trOpen').click(function(e) {
+            $('.quad.tr').toggleClass('open');
+            $('#mainTitle').toggleClass('top');
+            e.preventDefault();
+        });
+        $('#blOpen').click(function(e) {
+            $('.quad.bl').toggleClass('open');
+            $('#mainTitle').toggleClass('top');
+            e.preventDefault();
+        });
+        $('#brOpen').click(function(e) {
+            $('.quad.br').toggleClass('open');
+            $('#mainTitle').toggleClass('top');
+            e.preventDefault();
+        });
+    });
+</script>
+</body>
+</html>

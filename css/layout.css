@@ -24,10 +24,10 @@ body {
     font-weight: 900;
     font-size: 48px;
     text-shadow: 3px 3px 0 #000,
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px  1px 0 #000,
+    1px  1px 0 #000;
     pointer-events: none;
     transition: all 400ms cubic-bezier(.87,-.41,.19,1.44);
 }
@@ -107,11 +107,44 @@ a.expandLink {
     font-size: 36px;
 }
 
-
 .quad.tl a.expandLink:hover, .quad.br a.expandLink:hover {
     transform: scale(1.5,1.5) rotate(-10deg);
 }
 
 .quad.tr a.expandLink:hover, .quad.bl a.expandLink:hover {
     transform: scale(1.5,1.5) rotate(10deg);
+}
+
+#tlContent {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    padding: 0 40px;
+    opacity: 0;
+    font-size: 18px;
+    transition: all 500ms;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#tlContent p {
+    pointer-events: none;
+    display: none;
+}
+
+#tlContent a {
+    font-size: 28px;
+    pointer-events: auto;
+}
+
+.closeButton a {
+    color: #000;
+//opacity: 0;
+    transition: all 500ms;
+}
+
+.closeButton a:hover {
+    color: #009900;
 }

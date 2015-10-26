@@ -23,63 +23,51 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div id="titleParent"><div id="mainTitle">
-                designs by Jerimiah
-        </div></div>
-        <div class="quad tl">
-            <div class="parent"><a href="javascript:;" id="tlOpen" class="expandLink">
-                <i class="ion-ios-person"></i><br>
-                About Me
-            </a></div>
-        </div>
-        <div class="quad tr">
-            <div class="parent"><a href="javascript:;" id="trOpen" class="expandLink">
-                <i class="ion-ios-paper"></i><br>
-                Resume
-            </a></div>
-        </div>
-        <div class="quad bl">
-            <div class="parent"><a href="javascript:;" id="blOpen" class="expandLink">
-                <i class="ion-ios-film"></i><br>
-                Portfolio
-            </a></div>
-        </div>
-        <div class="quad br">
-            <div class="parent"><a href="javascript:;" id="brOpen" class="expandLink">
-                <i class="ion-ios-email"></i><br>
-                Contact
-            </a></div>
+<div class="container-fluid">
+    <div id="titleParent"><div id="mainTitle">
+        designs by Jerimiah
+    </div></div>
+    <div class="quad tl">
+        <div class="parent"><a href="javascript:;" id="tlOpen" class="expandLink">
+            <i class="ion-ios-person"></i><br>
+            About Me
+        </a></div>
+        <div id="tlContent" class="container">
+            <i class="ion-ios-person"></i> About Me
+            <div class="closeButton pull-right">
+                <a href="javascript:;" id="closeTL">
+                    <i class="ion-ios-close"></i>
+                </a>
+            </div>
+            <p>Nulla finibus velit a nisl ultrices fringilla. Duis vel arcu ac lacus ornare aliquam. Nullam tempus nibh ac nunc sodales volutpat. Suspendisse potenti. Aliquam laoreet nulla lectus, id bibendum ex sagittis ut. Nullam pulvinar vel risus id viverra. Vivamus fringilla quam augue, eget blandit neque rhoncus quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum in augue non dolor suscipit molestie. Duis venenatis commodo ex a faucibus. Aenean et velit nisl. Nam quis urna id elit vestibulum ornare. Mauris consectetur, sapien ac lacinia dignissim, justo ligula commodo eros, euismod consectetur sem magna at tortor. Donec vitae feugiat urna, vitae viverra nibh. Duis sed felis fermentum, egestas arcu non, hendrerit sem. Donec faucibus mauris eget arcu suscipit ullamcorper.</p>
+            <p>Fusce sollicitudin mi lorem, ut porttitor purus tempor in. Nam at elementum purus, a congue leo. Etiam vel metus eget est tempor fermentum varius eget neque. Nulla pulvinar ultrices auctor. Vestibulum sit amet tortor eu ante dictum porttitor vel sed tortor. Quisque accumsan facilisis cursus. Cras auctor interdum sapien et volutpat. Fusce sit amet risus semper arcu rhoncus interdum quis eget mi. Curabitur in lacus et quam malesuada ultrices ac ut nunc. Curabitur sit amet metus ullamcorper, iaculis sapien sit amet, fermentum tellus. Fusce felis velit, congue ut ligula eget, tristique dignissim orci. Etiam viverra nec lacus a dictum.</p>
+            <p>Nullam nec sagittis nibh, ac cursus quam. Aenean vitae massa id enim fringilla fringilla vel non diam. Curabitur rhoncus accumsan dignissim. Donec malesuada eleifend neque non placerat. Quisque eros lectus, dictum non lectus et, gravida lacinia mauris. Morbi a metus risus. Sed luctus et risus non aliquet. Donec sodales lorem quis nulla tincidunt porta. Nullam vitae porttitor eros, id semper ex. In congue iaculis libero, sit amet interdum sapien fermentum quis. Donec tempor justo nec justo rhoncus suscipit. Nulla porta laoreet porttitor. Pellentesque nisl neque, porttitor eu nunc eget, maximus imperdiet turpis. Morbi elementum est sit amet risus consectetur porta. Proin eget dignissim nibh. Nam tempor, risus id suscipit euismod, justo magna tempus turpis, ac posuere quam tortor sed urna.</p>
         </div>
     </div>
+    <div class="quad tr">
+        <div class="parent"><a href="javascript:;" id="trOpen" class="expandLink">
+            <i class="ion-ios-paper"></i><br>
+            Resume
+        </a></div>
+    </div>
+    <div class="quad bl">
+        <div class="parent"><a href="javascript:;" id="blOpen" class="expandLink">
+            <i class="ion-ios-film"></i><br>
+            Portfolio
+        </a></div>
+    </div>
+    <div class="quad br">
+        <div class="parent"><a href="javascript:;" id="brOpen" class="expandLink">
+            <i class="ion-ios-email"></i><br>
+            Contact
+        </a></div>
+    </div>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-<script>
-    $(function() {
-        $('#tlOpen').click(function(e) {
-            $('.quad.tl').toggleClass('open');
-            $('#mainTitle').toggleClass('top');
-            e.preventDefault();
-        });
-        $('#trOpen').click(function(e) {
-            $('.quad.tr').toggleClass('open');
-            $('#mainTitle').toggleClass('top');
-            e.preventDefault();
-        });
-        $('#blOpen').click(function(e) {
-            $('.quad.bl').toggleClass('open');
-            $('#mainTitle').toggleClass('top');
-            e.preventDefault();
-        });
-        $('#brOpen').click(function(e) {
-            $('.quad.br').toggleClass('open');
-            $('#mainTitle').toggleClass('top');
-            e.preventDefault();
-        });
-    });
-</script>
+<script src="js/navigation.js"></script>
 </body>
 </html>

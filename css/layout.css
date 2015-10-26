@@ -127,6 +127,8 @@ a.expandLink {
     transition: all 500ms;
     overflow-x: hidden;
     overflow-y: auto;
+    background: rgba(255,255,255,0.67);
+    border-radius: 5px;
 }
 
 #tlContent p {

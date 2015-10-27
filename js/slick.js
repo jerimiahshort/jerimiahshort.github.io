@@ -1,7 +1,8 @@
 $('.slideShow').slick({
     autoplay: true,
     autoplaySpeed: 4000,
-    dots: true,
+    dots: false,
+    arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,

@@ -115,38 +115,61 @@ a.expandLink {
     transform: scale(1.5,1.5) rotate(10deg);
 }
 
-#tlContent {
+#tlContent, #trContent, #blContent, #brContent {
     position: absolute;
     top: 70px;
     left: 0;
     right: 0;
     bottom: 30px;
-    padding: 0 40px;
+    padding: 30px 40px;
     opacity: 0;
     font-size: 18px;
     transition: all 500ms;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     background: rgba(255,255,255,0.67);
     border-radius: 5px;
 }
 
-#tlContent p {
-    pointer-events: none;
-    display: none;
+#tlContent hr, #trContent hr, #blContent hr, #brContent hr {
+    border-color: #000;
 }
 
-#tlContent a {
+#tlContent p, #trContent p, #blContent p, #brContent p {
+    pointer-events: none;
+    display: none;
+    text-align: justify;
+}
+
+#tlContent a, #trContent a, #blContent a, #brContent a {
     font-size: 28px;
     pointer-events: auto;
 }
 
 .closeButton a {
     color: #000;
-//opacity: 0;
     transition: all 500ms;
 }
 
 .closeButton a:hover {
     color: #009900;
+}
+
+.contentHeader {
+    height: 60px;
+}
+
+.scrollArea {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding-right: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scrollArea img {
+    padding: 0 0 10px 20px;
+}
+
+.emailLink {
+    font-size: 14px !important;
 }

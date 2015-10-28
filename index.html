@@ -10,9 +10,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-
+    <link rel="stylesheet" href="css/featherlight.min.css">
     <link rel="stylesheet" href="css/layout.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,7 +22,7 @@
 </head>
 <body>
 
-<div class="container-fluid">
+< class="container-fluid">
     <div id="titleParent"><div id="mainTitle">
         designs by Jerimiah
     </div></div>
@@ -171,7 +169,7 @@
                     <tbody>
                     <tr>
                         <td width="100%">
-                            <p><strong>Main Stream Telecommunications</strong> <em>(http://www.mainstreamtel.com)</em></p>
+                            <p><strong>Main Stream Telecommunications</strong> <em>(<a class="resumeLink" href="http://www.mainstreamtel.com" target="_blank">http://www.mainstreamtel.com</a>)</em></p>
                         </td>
                     </tr>
                     <tr>
@@ -198,7 +196,7 @@
                     <tbody>
                     <tr>
                         <td width="100%">
-                            <p><strong>Club NV</strong> <em>(http://www.clubnv.net)</em></p>
+                            <p><strong>Club NV</strong> <em>(<a class="resumeLink" href="http://www.clubnv.net" target="_blank">http://www.clubnv.net</a>)</em></p>
                         </td>
                     </tr>
                     <tr>
@@ -246,13 +244,51 @@
                 <hr>
             </div>
             <div class="scrollArea">
-                <div class="slideShow">
-                    <div><img src="img/thumbDJ0blivion.jpg"></div>
-                    <div><img src="img/thumbDoterra.jpg"></div>
-                    <div><img src="img/thumbMST.jpg"></div>
-                    <div><img src="img/thumbNVFront.jpg"></div>
-                    <div><img src="img/thumbNVBackend.jpg"></div>
-                </div>
+                <a href="img/dj0blivion-full.png" data-featherlight="image" class="imageRollover">
+                    <div class="divRollover">
+                        <h2>DJ 0blivion</h2>
+                        <div class="textRollover">
+                            <p>Fairly simple and straight-forward front end with a searchable, filterable search engine to display both karaoke and music files for customers. In addition, a members system with the ability to create playlists for karaoke as well as request music from the website to be added shortly.</p>
+                        </div>
+                    </div>
+                    <img src="img/thumbDJ0blivion.jpg">
+                </a>
+                <a href="img/doterra-full.png" data-featherlight="image" class="imageRollover">
+                    <div class="divRollover">
+                        <h2>dōTERRA of Celebration</h2>
+                        <div class="textRollover">
+                            <p>A clean and simplistic design/mock-up for a potential client. Client had to back out due to issues with parent company. Otherwise, client was extremely happy with design and flow.</p>
+                        </div>
+                    </div>
+                    <img src="img/thumbDoterra.jpg">
+                </a>
+                <a href="img/mst-full.png" data-featherlight="image" class="imageRollover">
+                    <div class="divRollover">
+                        <h2>Main Stream Telecom</h2>
+                        <div class="textRollover">
+                            <p>Fully responsive professional site created for small company specializing in cellular tower dealings. Client essentially wanted an online brochure with the ability for clients and potential clients to stay in touch as well as provide information on company.</p>
+                        </div>
+                    </div>
+                    <img src="img/thumbMST.jpg">
+                </a>
+                <a href="img/nv-full.png" data-featherlight="image" class="imageRollover">
+                    <div class="divRollover">
+                        <h2>Club NV - Front end</h2>
+                        <div class="textRollover">
+                            <p>A very vivid color palette made for an interesting design here. A private club needed an informational website with a very powerful back end. This is the front page of the front end.</p>
+                        </div>
+                    </div>
+                    <img src="img/thumbNVFront.jpg">
+                </a>
+                <a href="img/nv-backend-full.png" data-featherlight="image" class="imageRollover">
+                    <div class="divRollover">
+                        <h2>Club NV - Back end</h2>
+                        <div class="textRollover">
+                            <p>This is the dashboard for the back end of the previous site. Fully functional membership tracking, report engine, access-level driven employee system, and a full maintenance suite setup through CRON jobs keep this site running smooth.</p>
+                        </div>
+                    </div>
+                    <img src="img/thumbNVBackend.jpg">
+                </a>
             </div>
         </div>
     </div>
@@ -286,6 +322,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <script src="slick/slick.min.js"></script>
 <script src="js/navigation.js"></script>
-<script src="js/slick.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script>
+
+</script>
 </body>
 </html>
